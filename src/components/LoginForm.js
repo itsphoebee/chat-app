@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chat from './Chat'
 
 export default class Login extends Component {
   constructor(props) {
@@ -40,6 +41,9 @@ export default class Login extends Component {
             <button type="submit">
               Login
             </button>
+            <Chat
+              username={this.state.username}
+            />
           </form>
         </div>
       );
